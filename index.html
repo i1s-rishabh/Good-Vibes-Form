@@ -1,0 +1,173 @@
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Good Vibes Form</title>
+    <link rel="stylesheet" href="style.css" />
+    <link
+      href="https://fonts.googleapis.com/css?family=Patua+One|Cinzel|BenchNine|El+Messiri"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <main>
+      <h1>Good Vibes Form</h1>
+      <div class="master_div">
+        <p>Tell us something positive that happened to you today.</p>
+        <form id="survey_form" action="/ Nothing">
+          <!--first row for name label and it's input field -->
+          <div class="main_rows">
+            <div class="labels">
+              <label for="fname" id="name_label"> Full Name </label>
+            </div>
+            <div class="fields">
+              <input
+                type="text"
+                name="fname"
+                id="fname"
+                placeholder="Enter Your Full Name"
+                class="inputs"
+                required
+              />
+            </div>
+          </div>
+          <!--second row for email label and it's input field -->
+          <div class="main_rows">
+            <div class="labels">
+              <label for="email" id="email_label"> Email </label>
+            </div>
+            <div class="fields">
+              <input
+                type="email"
+                name="email"
+                id="email"
+                placeholder="Enter Your Email"
+                class="inputs"
+                required
+              />
+            </div>
+          </div>
+          <!--third row for measure scale label and it's input field -->
+          <div class="main_rows">
+            <div class="labels">
+              <label for="number" id="number_label">
+                On a scale of 1-10, how good was it?
+              </label>
+            </div>
+            <div class="fields">
+              <input
+                type="number"
+                name="number"
+                id="number"
+                placeholder="Enter a number 1 to 10"
+                class="inputs"
+                min="1"
+                max="10"
+              />
+            </div>
+          </div>
+          <!--fourth row for dropdown label and it's input field -->
+          <div class="main_rows">
+            <div class="labels">
+              <label for="dropdown" id="dropdown_label"
+                >Where did it happen?</label
+              >
+            </div>
+            <div class="fields">
+              <select
+                name="Location of positive event"
+                id="dropdown"
+                class="inputs"
+              >
+                <option value="home">At Home</option>
+                <option value="commute">On My Commute</option>
+                <option value="work">At Work</option>
+                <option value="outside">On The Street</option>
+                <option value="others">Others</option>
+              </select>
+            </div>
+          </div>
+          <!--fifth row for radio button label and it's input field -->
+          <div class="main_rows">
+            <div class="labels">
+              <label for="event_time" id="radio_label">
+                At what time of day did it happen?
+              </label>
+            </div>
+            <div class="fields">
+              <ul id="event_time" style="list-style: none">
+                <li class="radio">
+                  <input type="radio" name="time_period" value="morning" />
+                  <label>Morning</label>
+                </li>
+                <li class="radio">
+                  <input type="radio" name="time_period" value="afternoon" />
+                  <label>Afternoon</label>
+                </li>
+                <li class="radio">
+                  <input type="radio" name="time_period" value="evening" />
+                  <label>Evening</label>
+                </li>
+              </ul>
+            </div>
+          </div>
+          <!--sixth row for checkbox label and it's input field -->
+          <div class="main_rows">
+            <div class="labels">
+              <label for="emotions"
+                >What emotions did you experience?<br />
+                (You Can Select All)
+              </label>
+            </div>
+            <div class="fields">
+              <ul id="emotions" style="list-style: none">
+                <li class="radio">
+                  <label
+                    ><input type="checkbox" name="excited" /> Excited</label
+                  >
+                </li>
+                <li class="radio">
+                  <label
+                    ><input type="checkbox" name="humbled" /> Humbled</label
+                  >
+                </li>
+                <li class="radio">
+                  <label><input type="checkbox" name="elated" /> Elated</label>
+                </li>
+                <li class="radio">
+                  <label><input type="checkbox" name="loved" /> Loved</label>
+                </li>
+                <li class="radio">
+                  <label
+                    ><input type="checkbox" name="enthusiastic" />
+                    Enthusiastic</label
+                  >
+                </li>
+              </ul>
+            </div>
+          </div>
+          <!--seventh row for textarea label and it's input field -->
+          <div class="main_rows">
+            <div class="labels">
+              <label for="form_textarea" id="textarea_label"
+                >Please describe your positive experience.</label
+              >
+            </div>
+            <div class="fields">
+              <textarea
+                name="textarea"
+                id="form_textarea"
+                cols="37"
+                rows="4"
+                placeholder="Type here your experience..."
+              ></textarea>
+            </div>
+          </div>
+          <div class="center">
+            <button type="submit" style="text-align: center">Submit</button>
+          </div>
+        </form>
+      </div>
+    </main>
+  </body>
+</html>
